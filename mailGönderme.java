@@ -31,8 +31,8 @@ public class mailGönderme
     }
 
     private void sendEmail() throws MessagingException {
-        String fromUser = "@gmail.com";  //Enter sender email id
-        String fromUserPassword = "*****";  //Enter sender gmail password , this will be authenticated by gmail smtp server
+        String fromUser = "test2hesabi@gmail.com";  //Enter sender email id
+        String fromUserPassword = "hvdc bxny lioe erqi";  //Enter sender gmail password , this will be authenticated by gmail smtp server
         String emailHost = "smtp.gmail.com";
         Transport transport = newSession.getTransport("smtp");
         transport.connect(emailHost, fromUser, fromUserPassword);
@@ -42,8 +42,8 @@ public class mailGönderme
     }
 
     private MimeMessage draftEmail() throws AddressException, MessagingException, IOException {
-        String[] emailReceipients = {"Davutdemir5353@gmail.com","xyz@gmail.com"};  //Enter list of email recepients
-        String emailSubject = "Test Mail";
+        String[] emailReceipients = {"Davutdemir5353@gmail.com","cenkerenkalayci@hotmail.com"};  //Enter list of email recepients
+        String emailSubject = "ALLAHIM SONUNDA OLDU";
         String emailBody = "Meraba bu maili javayla yolladımmm!!!";
         mimeMessage = new MimeMessage(newSession);
 
